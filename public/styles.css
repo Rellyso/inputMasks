@@ -42,18 +42,35 @@ select {
 
 .container form {
     display: flex;
+    flex-direction: column;
 
     align-self: center;
     justify-self: center;
 
-    align-items: center;
     justify-content: center;
+
+    width: 900px;
+    margin: 0 auto;
+}
+
+.item {
+    margin: 16px;
+
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+}
+
+.container form input {
+    margin-left: 8px;
+    padding: 16px 8px ;
+    outline: none;
 
     width: 100%;
 }
 
-.container form input {
-    margin-left: 24px;
-    padding: 16px 8px ;
-    outline: none;
+
+.container form label {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
 }
